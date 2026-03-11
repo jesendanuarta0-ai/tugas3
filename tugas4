@@ -6,9 +6,8 @@ const arr = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
 const map1 = arr.map((x) => x ** 2);
 console.log(map1);
 
-// Create a new array `map2` populated with only the odd-value from the
-// array `arr`
-let map2 = arr.map((x) => {});
+
+let map2 = arr.map((x) => x % 2 !== 0 ? x : undefined).filter((x) => !!x);
 console.log(map2);
 
 // See the following links for hints.
